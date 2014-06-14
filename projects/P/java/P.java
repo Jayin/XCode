@@ -27,7 +27,7 @@ public class P {
 	public String format(){
 		for(String key:kv.keySet()){
 			String val  = kv.get(key);
-			mStr = mStr.replaceAll("\\{\\s*"+key+"\\s*\\}", val);
+			mStr = mStr.replaceAll("\\{\\s*"+key.replace("\\", "\\\\")+"\\s*\\}", val);
 		}
 		return mStr;
 	}
