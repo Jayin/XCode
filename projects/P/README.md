@@ -54,6 +54,20 @@ mStr.replaceAll("\\{\\s*"+key+"\\s*\\}", val);
 中规中矩，老实自己转义吧..
 
 
+##Next ?
+实现一个html模板引擎
+
+**js**  
+[用20行JavaScript代码写一些JavaScript模板引擎](http://www.html-js.com/article/1665)  
+[原文地址](http://krasimirtsonev.com/blog/article/Javascript-template-engine-in-just-20-line)  
+
+**py**    
+https://github.com/chenqing/simpleTemplate  
+[Python模板引擎比较](http://www.keakon.net/2013/09/08/Python%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E%E6%AF%94%E8%BE%83)
+
+**java**  
+[https://github.com/neuland/jade4j]
+
 
 
 
