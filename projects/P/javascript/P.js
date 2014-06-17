@@ -13,9 +13,9 @@ P.from = function (str) {
 
     operation.fromat = function () {
         for (var key in kv) {
-
-            mStr = mStr.replace(/\{\s*\w+\s*\}/g, function (word) {
-                return kv[word.slice(1, word.length - 1).trim()];
+            // thx @fritx ,for more see:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
+            mStr = mStr.replace(/\{\s*(\w+)\s*\}/g, function ($0,$1) {
+                return kv[$1];
             });
         }
         return mStr;
