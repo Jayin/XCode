@@ -53,6 +53,17 @@ mStr.replaceAll("\\{\\s*"+key+"\\s*\\}", val);
 
 中规中矩，老实自己转义吧..
 
+### php
+OO太渣了，实在不想说了。。  
+**定界符**通常使用 "/"做为定界符开始和结束,也可以使用"#",官方的例子用"|" （貌似用"()"也行）
+
+
+```php
+preg_replace_callback (mixed $pattern ,  callable $callback ,mixed  $subject [, int $limit = -1 [, int &$count ]] );
+
+preg_replace ( mixed $pattern , mixed $replacement , mixed $subject [, int $limit = -1 [, int &$count ]] )
+
+```
 
 ##Next ?
 实现一个html模板引擎
@@ -66,7 +77,7 @@ https://github.com/chenqing/simpleTemplate
 [Python模板引擎比较](http://www.keakon.net/2013/09/08/Python%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E%E6%AF%94%E8%BE%83)
 
 **java**  
-[https://github.com/neuland/jade4j]
+[jade4j](https://github.com/neuland/jade4j)
 
 
 
