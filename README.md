@@ -12,8 +12,6 @@ JDK 1.7
 PHP 5.5
 ```
 
-
-
-LICENSE
+License
 ===
-MIT
+MIT © Jayin

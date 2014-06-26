@@ -17,6 +17,3 @@ array_diff(input, values, [values, ...])
 Returns the new array.  
 ```
 
-License
-===
-MIT © Jayin
