@@ -10,8 +10,8 @@
 		private $sNation;
 	}
 	abstract class B{
-		public function a(){}
+		public function a();
 	}
 	$a=new A("JIANZHIYAO","20");
 	echo json_encode($a);
-?>
+?> 
