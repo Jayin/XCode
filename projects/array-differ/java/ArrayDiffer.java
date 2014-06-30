@@ -1,23 +1,30 @@
 package com.xcode;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class ArrayDiffer {
-
-	public static void main(String[] args) {
-		Integer[] s1 = new Integer[] { 2, 3, 4, 5, 6, 7 };
-		Integer[] s2 = new Integer[] { 3, 50 };
-		Integer[] s3 = new Integer[] { 1, 4, 7 };
-
-		for (Integer i : ArrayDifferTest.array_diff(s1, s2, s3)) {
-			System.out.print(i + " ");
+	public static Integer[] array_diff(Integer[]... arrays) {
+		if (arrays.length <= 1)
+			return arrays[0];
+		for (Integer[] a : arrays) {
+			Arrays.sort(a);
 		}
-
-		Integer[] s4 = new Integer[] { 2, 3, 4, 5, 6, 7 };
-		Integer[] s5 = new Integer[] { 3, 50 };
-
-		System.out.println();
-		for (Integer i : ArrayDifferTest.array_diff(s4, s5)) {
-			System.out.print(i + " ");
+		List<Integer> list = new ArrayList<Integer>();
+		for(int i=0;i<arrays[0].length;i++){
+			list.add(arrays[0][i]);
 		}
+		for (int i = 1; i < arrays.length; i++) {
+			for(int j=0;j<arrays[i].length;j++){
+				if(Arrays.binarySearch(arrays[0], arrays[i][j]) != -1){
+					list.remove(new Integer(arrays[i][j]));
+				}
+			}
+		}
+		return list.toArray(new Integer[]{});
+
 	}
+	
 
 }
