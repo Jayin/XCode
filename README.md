@@ -1,4 +1,4 @@
-XCode
+XCode ![license](http://img.shields.io/badge/license-MIT-brightgreen.svg)
 ===
 one idea implemented by multi languages
 
@@ -12,6 +12,3 @@ JDK 1.7
 PHP 5.5
 ```
 
-License
-===
-MIT © Jayin
