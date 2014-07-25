@@ -1,7 +1,5 @@
-var P = {};
 
-
-P.from = function (str) {
+module.exports.from = function (str) {
     var kv = {};
     var mStr = str;
     var operation = {};
@@ -11,7 +9,7 @@ P.from = function (str) {
         return this;
     }
 
-    operation.fromat = function () {
+    operation.format = function () {
         for (var key in kv) {
             // thx @fritx ,for more see:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
             mStr = mStr.replace(/\{\s*(\w+)\s*\}/g, function ($0,$1) {
@@ -23,7 +21,6 @@ P.from = function (str) {
     return operation;
 }
 
-module.exports = P;
 
 
 
